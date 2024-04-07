@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Kanit', sans-serif;
+font-family: 'Pixelify Sans', 'cursive';
+}
+body{
+    background-image: url(https://img.elo7.com.br/product/original/3EC2AD6/papel-de-parede-fisica-calculo-escolar-conta-matematica-a722-adesivo-estudo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #000000;
+    color:  rgb(255,255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color:  rgb(255,255, 255);
+    font-family: 'Kanit', sans-serif;
+}
+#operacoes{
+    text-align: right;
+    overflow-wrap: break-word;
+    min-height:4.6em;
+}
+#atual-operacao{
+    min-height: 1.6em;
+    font-weight: 700;
+    padding: .2em;
+}
+#previous-operacao{
+    color: #b2b1b1;
+    padding: .2em;
+}
+#conteiner-botao{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+#conteiner-botao button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4.5em;
+    width: 90px;
+    font-size: 1.1em;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(255,255, 255);
+    cursor: pointer;
+}
+#conteiner-botao button:hover{
+    background-color: #bababa;
+    border-color: #7b7b7b;
+    color: rgb(73, 240, 1);
+}
+#conteiner-botao .funcoes_calc{
+    background-color: #4d4d4d;
+    color: rgb(255, 255,255);
+}
+#conteiner-botao .funcoes_calc:hover{
+    background-color: #7b7b7b;
+    color:rgb(73, 240, 1);
+}
+#conteiner-botao #igual-botao{
+    grid-column: span 2;
+    width:187px;
+    background-color:rgb(73, 240, 1);
+}
